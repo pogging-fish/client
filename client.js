@@ -9,7 +9,7 @@ export async function open(port){
         ClientEvents.on("PORTOPENED", () => {res(true)})
     })
 }
-const socket = io("ws://localhost:65345")
+const socket = io("ws://pognet.pogging.fish")
 let token = ""
 const data = fs.readFileSync('./login.json', 'utf8')
 const login = JSON.parse(data)
